@@ -61,8 +61,6 @@ for threshold, level in cpu_thresholds:
 # ==================================================
 mem_extra_dimensions = [
     {'Name': 'InstanceId', 'Value': INSTANCE_ID},
-    {'Name': 'ImageId', 'Value': '*'},
-    {'Name': 'InstanceType', 'Value': '*'}
 ]
 
 mem_thresholds = [(90, "Critical"), (80, "Warning"), (79, "Normal")]
